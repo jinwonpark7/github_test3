@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+
+
+bool isEvenNumber(int a) {
+	bool isEven;
+	if (a % 2 == 0) {
+		isEven = true;
+	}
+	else
+	{
+		isEven = false;
+	}
+	return isEven;
+}
+
+int main()
+{
+	int num=0;
+	cin >> num;
+
+	if (isEvenNumber(num)) 
+	{
+		cout << "¦" << endl;
+	}
+	else
+	{
+		cout << "Ȧ" << endl;
+	}
+	
+	return 0;
+}
+
